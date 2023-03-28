@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pywuziming/wuziming.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/pywuziming/wuziming.github.io/static/js/main.bfe95560.js",
-    "static/js/787.bc7d429a.chunk.js": "/pywuziming/wuziming.github.io/static/js/787.bc7d429a.chunk.js",
-    "static/media/logo.svg": "/pywuziming/wuziming.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/pywuziming/wuziming.github.io/index.html",
-    "main.073c9b0a.css.map": "/pywuziming/wuziming.github.io/static/css/main.073c9b0a.css.map",
-    "main.bfe95560.js.map": "/pywuziming/wuziming.github.io/static/js/main.bfe95560.js.map",
-    "787.bc7d429a.chunk.js.map": "/pywuziming/wuziming.github.io/static/js/787.bc7d429a.chunk.js.map"
+    "main.css": "./static/css/main.073c9b0a.css",
+    "main.js": "./static/js/main.880ffaee.js",
+    "static/js/787.bc7d429a.chunk.js": "./static/js/787.bc7d429a.chunk.js",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "./index.html",
+    "main.073c9b0a.css.map": "./static/css/main.073c9b0a.css.map",
+    "main.880ffaee.js.map": "./static/js/main.880ffaee.js.map",
+    "787.bc7d429a.chunk.js.map": "./static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.bfe95560.js"
+    "static/js/main.880ffaee.js"
   ]
 }
