@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  height: 20vh;
+  background: transparent;
+}
+
+.main {
+  height: 50vh;
+  background: transparent;
+}
+.clicking:hover {
+  color: red;
+}
+
+.clicking:active {
+  color: red;
+}
+
+.bottom {
+  display: block;
+  height: 30vh;
+  background: transparent;
+}
+
+.full-bg {
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  transition: all 1s ease;
+}
+
+.full-bg.bottom-to-top.radius {
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+}
+.full-bg.bottom-to-top {
+  bottom: 0;
+  height: 100vh;
+  background: #000;
+}
+.full-bg.left-to-right {
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  background: #000;
+}
+.full-bg.left-to-right.radius {
+  border-top-left-radius: 90px;
+  border-bottom-left-radius: 200px;
+}
