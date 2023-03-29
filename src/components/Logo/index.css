@@ -36,6 +36,7 @@
   height: 100vh;
   width: 0;
   transition: all 1s ease;
+  opacity: 0.1;
 }
 
 .full-bg.bottom-to-top.radius {
@@ -45,15 +46,53 @@
 .full-bg.bottom-to-top {
   bottom: 0;
   height: 100vh;
-  background: #000;
+  background: #3f3f3f;
 }
 .full-bg.left-to-right {
   bottom: 0;
   right: 0;
   width: 100vw;
-  background: #000;
+  background: #3f3f3f;
+  opacity: 0.2;
 }
 .full-bg.left-to-right.radius {
   border-top-left-radius: 90px;
-  border-bottom-left-radius: 200px;
+  border-bottom-left-radius: 300px;
+}
+.wx {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  position: fixed;
+  top: calc(50% - 100px);
+  right: -200px;
+}
+.wx-move {
+  /* animation: wx-right-left infinite 1s linear; */
+
+  /*动画配置 */
+  /* 1、设置动画名称 */
+  animation-name: wx-right-left;
+  /* 2、动画持续时间 */
+  animation-duration: 2s;
+  /* 3、动画执行速度 */
+  animation-timing-function: linear;
+  /* 4、等待时长 */
+  /* animation-delay: 2s; */
+  /* 5、设置动画播放次数 */
+  /* animation-iteration-count: infinite; */
+  /* 6、设置动画是否反向播放 */
+  animation-direction: alternate;
+  /* 7、动画结束时应用最后一帧 */
+  animation-fill-mode: forwards;
+}
+@keyframes wx-right-left {
+  from {
+    top: calc(50% - 100px);
+    right: -200px;
+  }
+  to {
+    top: calc(50% - 100px);
+    right: calc(50% - 100px);
+  }
 }
