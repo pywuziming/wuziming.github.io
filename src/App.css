@@ -1,5 +1,6 @@
 .App {
   width: 100%;
+  height: 100vh;
   text-align: center;
   background: linear-gradient(to top right, #EAECED, #ACE0F9);
 
@@ -15,7 +16,6 @@
   margin-right: 140px;
   padding-top: 70px;
 }
-.content .left-content {}
 .content .left-content img{
   width: 63px;
   height: 47px;
@@ -48,42 +48,116 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-family: IdeaFonts-JueJiangHei-85;
+  font-size: 100px;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #1d768a;
+  letter-spacing: 0px;
 }
 .main-container .title {
-  /* width: 391px; */
 	height: 91px;
-	font-family: IdeaFonts-JueJiangHei-85;
-	font-size: 100px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 53px;
-	letter-spacing: 0px;
-	color: #1d768a;
+	line-height: 53px;	
 }
 .main-container .txt-ENglish {
 	height: 20px;
   margin-top: 32px;
-	font-family: IdeaFonts-JueJiangHei-85;
 	font-size: 25px;
-	font-weight: normal;
-	font-stretch: normal;
 	letter-spacing: 3px;
-	color: #1d768a;
 }
 .main-container .txt-desc {
-	width: 833px;
-	height: 118px;
+	min-width: 833px;
+  max-width: 871px;
   margin-top: 46px;
 	font-family: IdeaFonts-JueJiangHei-60;
 	font-size: 20px;
-	font-weight: normal;
-	font-stretch: normal;
 	line-height: 48px;
-	letter-spacing: 0px;
-	color: #1d768a;
 }
 .btn-container{
   display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.btn-container .btn {
+	width: 241px;
+	height: 60px;
+  line-height: 60px;
+	border-radius: 10px;
+	border: solid 2px #1d768a;
+	font-family: IdeaFonts-JueJiangHei-60;
+	font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #1d768a;
+}
+.btn-container .btn:first-of-type {
+  margin-right: 20px;
+}
+.full-bg {
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  transition: all 1s ease;
+  opacity: 0.1;
+}
+
+.full-bg.bottom-to-top.radius {
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+}
+.full-bg.bottom-to-top {
+  bottom: 0;
+  height: 100vh;
+  background: #3f3f3f;
+}
+.full-bg.left-to-right {
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  background: #3f3f3f;
+  opacity: 0.2;
+}
+.full-bg.left-to-right.radius {
+  border-top-left-radius: 90px;
+  border-bottom-left-radius: 300px;
+}
+.wx {
+  height: 200px;
+  width: 200px;
+  position: fixed;
+}
+.wx-img {
+  height: 100%;
+  width: 100%;
+}
+.wx-move {
+  /*动画配置 */
+  /* 1、设置动画名称 */
+  animation-name: wx-right-left;
+  /* 2、动画持续时间 */
+  animation-duration: 1.5s;
+  /* 3、动画执行速度 */
+  animation-timing-function: linear;
+  /* 4、等待时长 */
+  /* animation-delay: 2s; */
+  /* 5、设置动画播放次数 */
+  /* animation-iteration-count: infinite; */
+  /* 6、设置动画是否反向播放 */
+  animation-direction: alternate;
+  /* 7、动画结束时应用最后一帧 */
+  animation-fill-mode: forwards;
+}
+@keyframes wx-right-left {
+  from {
+    top: calc(50% + 154px);
+    right: -200px;
+  }
+  to {
+    top: calc(50% + 154px);
+    right: calc(50% + 270px);
+  }
 }
 /* .App-logo {
   height: 40vmin;

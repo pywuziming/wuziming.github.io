@@ -59,6 +59,9 @@
   border-top-left-radius: 90px;
   border-bottom-left-radius: 300px;
 }
+.no-display {
+  display: none;
+}
 .wx {
   height: 200px;
   width: 200px;
