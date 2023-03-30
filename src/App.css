@@ -342,12 +342,12 @@
   }
   @keyframes wx-right-left {
     from {
-      top: calc(50% + 154px);
-      right: -200px;
+      top: calc(50% -100px);
+      right: -100px;
     }
     to {
-      top: calc(50% + 154px);
-      right: calc(50% + 270px);
+      top: calc(50% - 100px);
+      right: calc(50% - 100px);
     }
   }
 }
