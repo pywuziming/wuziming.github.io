@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import './App.css';
 import logo from './static/logo.png'
 import wxImg from './static/wxImg.png'
 
 function App() {
+  const [hasClick, setHasClick] = useState(false);
 
   const showPageUp = () => {
     const fullBg = document.querySelector('.full-bg')
@@ -18,8 +20,11 @@ function App() {
   }
 
   const handleMove = () => {
+    setHasClick(true)
     const fullBg = document.querySelector('.wx')
     fullBg.classList.add('wx-move')
+    const contact = document.querySelector('.contact')
+    contact.classList.add('full-btn')
   };
 
   return (
@@ -46,7 +51,10 @@ function App() {
             <div>每一个虚拟空间都可以呈现包含开放世界、在线直播、高保真3D体验、互动视频、游戏化人物形象和社交网络传播在内的多样化功能，这些虚拟空间可以相互连通，构建连接的虚拟社区和世界。</div>
           </div>
           <div className='btn-container'>
-            <div className='btn' onClick={handleMove}>联系我们</div>
+            <div className='btn contact' onClick={handleMove}>
+              {hasClick && <div className='icon'></div>}
+              联系我们
+            </div>
             <div className='btn'>关注我们</div>
           </div>
         </main>
